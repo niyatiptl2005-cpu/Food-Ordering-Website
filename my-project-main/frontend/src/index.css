@@ -1,0 +1,64 @@
+/* Reset some browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+}
+
+/* Apply font & background for whole site */
+body {
+    background-color: #f9efe3; /* light grey background */
+    color: #333; /* default text color */
+    /* line-height: 1.6;*/
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Container class for consistent padding 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+} */
+
+html,
+body {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1; /* takes remaining space */
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full height of screen */
+}
+
+/* The content area takes up all available space */
+.content {
+    flex: 1;
+}
+
+/* Footer always stays at bottom */
+footer {
+    background-color: #ff4d4d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

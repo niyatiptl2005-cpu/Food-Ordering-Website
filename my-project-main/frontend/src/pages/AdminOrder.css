@@ -1,0 +1,42 @@
+/* Import shared admin styles */
+@import "../styles/AdminCommon.css";
+
+/* Table Styling - Scoped to admin-container */
+.admin-container .content table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-container .content th,
+.admin-container .content td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.admin-container .content th {
+    background-color: #5a2e1f;
+    color: #fff;
+}
+
+.admin-container .content tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin-container .content p {
+    text-align: center;
+    font-size: 16px;
+    color: #5a2e1f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-container .content table,
+    .admin-container .content th,
+    .admin-container .content td {
+        font-size: 13px;
+    }
+}

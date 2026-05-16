@@ -1,0 +1,127 @@
+/* Import shared admin styles */
+@import "../styles/AdminCommon.css";
+
+/* ✅ Add Item Form */
+.add-item-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-item-form input {
+    flex: 1;
+    min-width: 180px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.add-item-form button {
+    background-color: #5a2e1f;
+    color: #e2ca76;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-item-form button:hover {
+    color: #5a2e1f;
+    background-color: #e2ca76;
+}
+
+/* Table Styling - Scoped to admin-container */
+.admin-container .content table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container .content thead {
+    background-color: #5a2e1f;
+    color: #e2ca76;
+}
+
+.admin-container .content th,
+.admin-container .content td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Buttons in Table */
+.edit-btn,
+.delete-btn {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 6px;
+    transition: 0.3s;
+}
+
+.edit-btn {
+    background-color: #5a2e1f;
+    color: #e2ca76;
+}
+
+.edit-btn:hover {
+    background-color: #e2ca76;
+    color: #5a2e1f;
+}
+
+.delete-btn {
+    background-color: #5a2e1f;
+    color: #e2ca76;
+}
+
+.delete-btn:hover {
+    background-color: #e2ca76;
+    color: #5a2e1f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .add-item-form input {
+        min-width: 140px;
+    }
+
+    .admin-container .content table,
+    .admin-container .content th,
+    .admin-container .content td {
+        font-size: 13px;
+    }
+}
+
+/* ✅ Upload Button Styles */
+.upload-btn {
+    background-color: #5a2e1f;
+    color: #e2ca76;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.upload-btn:hover {
+    color: #5a2e1f;
+    background-color: #e2ca76;
+}
+
+.file-name {
+    font-size: 13px;
+    color: #555;
+    align-self: center;
+}

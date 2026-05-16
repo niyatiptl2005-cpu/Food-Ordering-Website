@@ -1,0 +1,147 @@
+.cart-page {
+  max-width: 1000px;
+  margin: 100px auto 120px; /* to avoid footer overlap */
+  padding: 20px;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cart-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #693c2e;
+}
+
+.cart-table {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-header, .cart-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.cart-header {
+  font-weight: bold;
+  color: #E2CA76;
+  background: #693c2e;
+  padding: 15px;
+  border-radius: 22px;
+}
+
+.cart-row {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.cart-image img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cart-item-price {
+  color: #666;
+}
+
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cart-quantity button {
+  background: #693c2e;
+  color: #E2CA76;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cart-quantity button:hover{
+  color: #693c2e;
+  background-color: #E2CA76;
+}
+
+.cart-quantity span {
+  font-weight: bold;
+}
+
+.cart-subtotal {
+  font-weight: 600;
+}
+
+.cart-remove button {
+  background: transparent;
+  color: #693c2e;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cart-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.checkout-btn {
+  background: #693c2e;
+  color: #E2CA76;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #E2CA76;
+  color: #693c2e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-header {
+    display: none;
+  }
+
+  .cart-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cart-summary {
+    align-items: center;
+  }
+}

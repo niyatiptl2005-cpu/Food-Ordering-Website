@@ -1,0 +1,34 @@
+/* in index.css or App.css */
+.main-content {
+  padding-bottom: 120px; /* adjust according to your footer height */
+}
+
+.footer {
+  background-color: #000;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 30px;
+  padding: 30px 50px;
+  text-align: center;
+  position: relative;   /* Fix at bottom */
+  width: 100%;  
+        /* Stretch full width */
+ 
+}
+.footer-column h3, .footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.footer-column p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr; /* stack in single column */
+    text-align: center;
+  }
+}

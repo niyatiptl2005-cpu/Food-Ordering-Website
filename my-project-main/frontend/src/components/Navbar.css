@@ -1,0 +1,104 @@
+/* Base Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 15px 40px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0%;
+  left:0%;
+
+}
+
+/* Logo */
+.logo {
+  color: white;
+  color: #E2CA76;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Links (default desktop) */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #E2CA76;
+}
+
+.user-name {
+  color: #E2CA76;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 1px solid #E2CA76;
+  color: #E2CA76;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #E2CA76;
+  color: black;
+}
+
+/* Hamburger menu (hidden by default) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Responsive (Mobile < 768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: black;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

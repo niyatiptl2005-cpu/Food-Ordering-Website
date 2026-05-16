@@ -1,0 +1,98 @@
+.menu-section {
+  background-color: #f9efe3;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 2rem;
+  color: #5a2e1f;
+  margin-bottom: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+/* 🟢 Grid Layout - 3 cards per row on desktop */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: stretch;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Each Card */
+.menu-card {
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.menu-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  background-color: #f8f5f0;
+}
+
+/* Name and Price */
+.menu-card h3 {
+  color: #5a2e1f;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.menu-price {
+  color: #5a2e1f;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Add Button */
+.add-btn {
+  color: #E2CA76;
+  background-color: #693c2e;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 18px;
+  font-size: medium;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  color: #4c3026;
+  background-color: #E2CA76;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .menu-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-img {
+    height: 160px;
+  }
+  .menu-card {
+    max-width: 260px;
+  }
+}

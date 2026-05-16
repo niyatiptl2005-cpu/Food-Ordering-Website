@@ -1,0 +1,106 @@
+/* ===============================
+   Admin Dashboard Page Styles
+   =============================== */
+
+/* Import shared admin styles */
+@import "../styles/AdminCommon.css";
+
+/* Override sidebar colors for AdminUser page */
+.admin-container .sidebar {
+    background-color: #000;
+    color: white;
+}
+
+.admin-container .sidebar h2 {
+    color: #ff6600;
+}
+
+.admin-container .sidebar li:hover,
+.admin-container .sidebar .active {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* Override content h1 color for AdminUser page */
+.admin-container .content h1 {
+    color: #000;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.search-bar button {
+    background-color: #5a2e1f;
+    color: #e2ca76;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #e2ca76;
+    color: #5a2e1f;
+}
+
+.reset-btn {
+    color: #5a2e1f;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    text-decoration: none;
+}
+
+/* Table Styling - Scoped to admin-container */
+.admin-container .content table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container .content thead {
+    background-color: #ff6600;
+    color: white;
+}
+
+.admin-container .content th,
+.admin-container .content td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.admin-container .content tbody tr:hover {
+    background-color: #fff2e6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-container .content table,
+    .admin-container .content th,
+    .admin-container .content td {
+        font-size: 13px;
+    }
+}
